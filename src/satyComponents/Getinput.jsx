@@ -13,9 +13,10 @@ function InputExample() {
      <div> <input
         type="text"
         placeholder="Enter your name"
-        onChange={(e) => setName(e.target.value)}
+        onChange={handleInputChange}
+        // onChange={(event) => {setName(event.target.value)}}
       />
-            {/* <h2>Output: {name}</h2> */}
+            <h2>Output: {name}</h2>
       </div> 
     </div>
   )
