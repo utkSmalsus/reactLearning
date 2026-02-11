@@ -1,14 +1,18 @@
 
+import { Container } from 'react-bootstrap'
 import './App.css'
-import Counter from './components/Counter'
+//import Counter from './components/Counter'
+import Countersk from './satyComponents/Countersk'
+
 
 function App() {
  
 
   return (
     <>
-   <h1>Hi from react</h1>
-   <Counter />
+<Countersk></Countersk>
+   
+   {/* <Counter /> */}
     </>
   )
 }
