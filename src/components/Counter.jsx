@@ -9,7 +9,7 @@ const [count, setCount] = useState(0) //useState hook
     }
     function decrement(){
         if(count>0){
-setCount(count-1)
+          setCount(count-1)
         }
         else{
             setCount(0)
