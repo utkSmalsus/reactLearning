@@ -1,17 +1,24 @@
 //import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-function header(){
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+function header(props){
+
     return(
         <>
-   <header style={{backgroundColor:"#ccc", padding:"20px"}}>
+   <header style={{backgroundColor:"#ccc", }}>
          <Container>
             <Row>
-                <Col md={6} className="text-left border p-4 bg-light">
-                  <h1 style={{color:"#000;"}}>React program </h1>
+                <Col md={6} className="text-left  p-4 ">
+                  <h1 style={{color:"#000;"}}>{props.heading} </h1>
                 </Col>  
-                <Col md={6} className="text-right border p-4 bg-light">
-                My first react program
+                <Col md={6} className="col-md-6 p-4 text-end">
+                {props.subheading}  
+                  <FontAwesomeIcon icon={faCoffee} />
+                     <FontAwesomeIcon icon={faFacebook} />
+                     <FontAwesomeIcon icon={faLinkedin} />
                 </Col>
             </Row>
          </Container>
