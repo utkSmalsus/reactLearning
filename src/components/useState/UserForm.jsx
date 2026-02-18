@@ -6,21 +6,25 @@ function UserForm() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    //for form data
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         password: "",
         confirmPassword: ""
     });
+
+    //for show password
     const [showPassword, setShowPassword] = useState(false);
-    
+    //for error
     const [error, setError] = useState("");
+    //for form data
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormData({ name: name, email: email, password: password, confirmPassword: confirmPassword });
       setName("")
     }
-
+//for email validation
     function handleEmailChange(e) {
         const value = e.target.value;
         // simple email regex
