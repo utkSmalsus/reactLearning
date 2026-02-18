@@ -10,7 +10,7 @@ import { Cardpanel, Blogpanel } from './satyComponents/Card';
 import Footer from './satyComponents/footer';
 import { blog } from './Data/Blog';
 import Newcount from './satyComponents/Newconut';
-import UserForm from './components/UserForm';
+import UserForm from './components/useState/UserForm';
 
 
 
