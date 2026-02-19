@@ -3,14 +3,19 @@ import { Card, Container, Row, Col } from 'react-bootstrap'
 import './App.css'
 //import Counter from './components/Counter'
 
-import Minitodo from './satyComponents/Minitodo';
-import Evenandoddck from './satyComponents/Evenandoddck';
+// import Minitodo from './satyComponents/Minitodo';
+// import Evenandoddck from './satyComponents/Evenandoddck';
+// import { Cardpanel, Blogpanel } from './satyComponents/Card';
+// import { blog } from './Data/Blog';
+// import Newcount from './satyComponents/Newconut';
+// import UserForm from './components/UserForm';
 import Header from './satyComponents/Header';
-import { Cardpanel, Blogpanel } from './satyComponents/Card';
 import Footer from './satyComponents/footer';
-import { blog } from './Data/Blog';
-import Newcount from './satyComponents/Newconut';
-import UserForm from './components/UserForm';
+import Sigenupform from './satyComponents/Sinupform/sigenupform';
+import Listing from './satyComponents/map/Listing';
+import Userlist from './satyComponents/map/Userlist';
+
+<satyComponents />
 
 
 
@@ -46,8 +51,19 @@ function App() {
       <Minitodo />
       <Evenandoddck />
       <Newcount /> */}
+  {/*     created by utkars
 
-      <UserForm />
+      <UserForm /> */}
+
+      {/* <Listing />
+
+       <Userlist></Userlist> */}
+
+      {/* created by satyendra smalsus */}
+      <Sigenupform />
+      
+
+      {/* <Footer /> */}
 
     </>
   )

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function UserForm() {
-    const [name, setName] = useState("");
+    const [name, setName] = useState(""); 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
@@ -38,7 +38,7 @@ function UserForm() {
             </div>
             <div className='form-group'>
                 <label htmlFor="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" className='form-control' onChange={(e) => setConfirmPassword(e.target.value)} />
+                <input type="password" name="confirmPassword" className='form-control' onChange={(e) => setConfirmPassword(e.target.value)} />
             </div>
             <button type="submit" className='btn btn-primary' onClick={handleSubmit}>Register</button>
         </form>
