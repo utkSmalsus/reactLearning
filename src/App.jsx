@@ -11,11 +11,10 @@ import './App.css'
 // import UserForm from './components/UserForm';
 import Header from './satyComponents/Header';
 import Footer from './satyComponents/footer';
-import Sigenupform from './satyComponents/Sinupform/sigenupform';
-import Listing from './satyComponents/map/Listing';
-import Userlist from './satyComponents/map/Userlist';
-
-<satyComponents />
+import { blog } from './Data/Blog';
+import Newcount from './satyComponents/Newconut';
+import UserForm from './components/useState/UserForm';
+//import Sigenupform from './satyComponents/Sinupform/Sigenupform'
 
 
 
@@ -51,16 +50,17 @@ function App() {
       <Minitodo />
       <Evenandoddck />
       <Newcount /> */}
-  {/*     created by utkars
+   created by utkars
 
-      <UserForm /> */}
+      <UserForm /> 
 
       {/* <Listing />
 
        <Userlist></Userlist> */}
 
       {/* created by satyendra smalsus */}
-      <Sigenupform />
+    
+      {/* <Sigenupform /> */}
       
 
       {/* <Footer /> */}
