@@ -19,17 +19,16 @@ function UserForm() {
     //for error
     const [error, setError] = useState("");
     //for form data
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (e) => {e.preventDefault();
         setFormData({ name: name, email: email, password: password, confirmPassword: confirmPassword });
       setName("")
-    }
+    };
 //for email validation
     function handleEmailChange(e) {
         const value = e.target.value;
         // simple email regex
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
+         setEmail(value); 
         // optional: check valid or not
         if (emailRegex.test(value)) {
             setEmail(value);
