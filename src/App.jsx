@@ -14,6 +14,7 @@ import Header from './satyComponents/Header';
 import Footer from './satyComponents/footer';
 import { blog } from './Data/Blog';
 import Newcount from './satyComponents/Newconut';
+import GetData from './components/useEffect/GetData';
 
 //import Sigenupform from './satyComponents/Sinupform/Sigenupform'
 
@@ -63,8 +64,9 @@ function App() {
 
       {/* <Footer /> */}
 
-      <UserForm /> 
-      <Sigenupform></Sigenupform>
+      {/* <UserForm />  */}
+      {/* <Sigenupform></Sigenupform> */}
+      <GetData />
     </>
   )
 }
